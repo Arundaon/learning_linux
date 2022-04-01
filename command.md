@@ -110,6 +110,34 @@ Shortcut lain history adalah ctrl+R, yang mana adalah reverse command. Kita bisa
 ```sh
 $ history
 ```
+#### find
+find digunakan untuk mencari file pada suatu directory.
+```sh
+$ find ./Document -name duck.jpg
+```
+untuk mencari type spesifik, kita bisa menggunakan flag -type.
+```sh
+$ find ./Document -type d -name foto
+```
+
+#### man
+man adalah command untuk melihat manual dari command tersebut, yang berisi dokumentasi dari command tersebut.
+```sh
+$ man echo
+```
+
+#### whatis
+whatis digunakan untuk mendeskripsikan secara singkat apa fungsi sebuah command. Deskripsi dari whatis didapatkan dari manual page.
+
+#### alias
+command alias digunakan untuk membuat shortcut keyword pada sebuah command.
+```sh
+$ alias la='ls -la'
+```
+Setelah reboot, alias tersebut akan hilang. Untuk membuat permanen, kita harus menambahkan alias tersebut ke ~/.bashrc. Untuk menghapus alias kita bisa menggunakan : 
+```sh
+$ unalias la
+```
 
 ### Wildcard
 Saat kita menggunakan command  misalnya cp, kita bisa men-copy beberapa file sekaligus menggunakan wildcard. Command lain yang juga bisa menggunakan wildcard misalnya rm dan mv. Command akan mengeksekusi sebanyak file atau folder yang memenuhi pattern wildcard. 
